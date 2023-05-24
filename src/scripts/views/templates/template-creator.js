@@ -31,7 +31,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <h3>Overview</h3>
     <p>${restaurant.description}</p>
     <h4>Categories</h4>
-    <p>${restaurant.categories.map((category) => category.name).join(' | ')}</p>
+    <p>${restaurant.categories.map((category) => category.name).join(', ')}</p>
     <h4>Foods :</h4>
     <p>${restaurant.menus.foods.reduce((show, value) => show.concat(`<li><i class="fa-solid fa-bowl-food" style="color: #000000;"></i> ${value.name} </li>`), '')}</p>
     <h4>Drinks :</h4>

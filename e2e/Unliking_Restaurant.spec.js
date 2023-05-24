@@ -7,7 +7,7 @@ Before(({ I }) => {
 });
 
 Scenario('removing one favorite restaurant', async ({ I }) => {
-  I.see('Tidak ada restoran untuk ditampilkan', '.restaurant-item__not__found');
+  I.see('You have not added any restaurant yet', '.restaurant-item__not__found');
 
   I.amOnPage('/');
   I.wait(2) // wait for loader
@@ -31,5 +31,5 @@ Scenario('removing one favorite restaurant', async ({ I }) => {
   I.seeElement('#likeButton');
   I.click('#likeButton');
   I.amOnPage('/#/Like');
-  I.see('Tidak ada restoran untuk ditampilkan', '.restaurant-item__not__found');
+  I.see('You have not added any restaurant yet', '.restaurant-item__not__found');
 });

@@ -22,7 +22,7 @@ const Like = {
     });
     } else {
       restaurantContainer.innerHTML =`
-        <div class="restaurant-item__not__found">Tidak ada restoran untuk ditampilkan</div>
+        <div class="restaurant-item__not__found">You have not added any restaurant yet</div>
       `;
     }
   },

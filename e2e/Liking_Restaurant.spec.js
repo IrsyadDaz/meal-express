@@ -7,11 +7,11 @@ Before(({ I }) => {
 });
 
 Scenario('showing empty liked restaurant', ({ I }) => {
-  I.see('Tidak ada restoran untuk ditampilkan', '.restaurant-item__not__found');
+  I.see('You have not added any restaurant yet', '.restaurant-item__not__found');
 });
 
 Scenario('liking one restaurant', async ({ I }) => {
-  I.see('Tidak ada restoran untuk ditampilkan', '.restaurant-item__not__found');
+  I.see('You have not added any restaurant yet', '.restaurant-item__not__found');
 
   I.amOnPage('/');
   I.wait(2) // wait for loader
