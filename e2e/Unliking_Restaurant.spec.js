@@ -6,7 +6,7 @@ Before(({ I }) => {
   I.amOnPage('/#/Like');
 });
 
-Scenario('removing one favorite restaurant', async ({ I }) => {
+Scenario('unliking a restaurant', async ({ I }) => {
   I.see('You have not added any restaurant yet', '.restaurant-item__not__found');
 
   I.amOnPage('/');
