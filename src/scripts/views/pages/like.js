@@ -16,12 +16,12 @@ const Like = {
   async afterRender() {
     const restaurants = await FavoriteRestaurantIdb.getAllRestaurant();
     const restaurantContainer = document.querySelector('#list');
-    if (restaurants.length){
+    if (restaurants.length) {
       restaurants.forEach((restaurant) => {
-      restaurantContainer.innerHTML += createRestaurantItemTemplate(restaurant);
-    });
+        restaurantContainer.innerHTML += createRestaurantItemTemplate(restaurant);
+      });
     } else {
-      restaurantContainer.innerHTML =`
+      restaurantContainer.innerHTML = `
         <div class="restaurant-item__not__found">You have not added any restaurant yet</div>
       `;
     }

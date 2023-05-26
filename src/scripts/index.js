@@ -12,14 +12,14 @@ const app = new App({
   content: document.querySelector('#mainContent'),
 });
 
-const skipLink = document.querySelector(".skip-link");
-const mainContent = document.querySelector("#mainContent");
+const skipLink = document.querySelector('.skip-link');
+const mainContent = document.querySelector('#mainContent');
 
-skipLink.addEventListener("click", event => {
-    event.preventDefault();
-    mainContent.scrollIntoView({behavior : "smooth"});
-    skipLink.blur();
-})
+skipLink.addEventListener('click', (event) => {
+  event.preventDefault();
+  mainContent.scrollIntoView({ behavior: 'smooth' });
+  skipLink.blur();
+});
 
 window.addEventListener('load', () => {
   app.renderPage();
