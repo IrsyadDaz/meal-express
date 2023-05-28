@@ -25,7 +25,8 @@
   }
  
   .app-bar .app-bar__navigation ul li a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin: 0;
   }
 
@@ -59,9 +60,12 @@
 @media screen and (max-width: 767px) {
 
   .app-bar .app-bar__navigation ul li a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin: 0;
     width: 120px;
+    min-width: 44px;
+    min-height: 44px;
   }
 }
 @media screen and (min-width: 400px) {

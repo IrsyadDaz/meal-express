@@ -96,12 +96,17 @@ body {
   left: 0;
 }
 
+
+
 .app-bar .app-bar__navigation ul li a {
   text-decoration: none;
   color: white;
-  padding: 12px;
+  padding: 15px;
+  justify-content: center;
   text-align: center;
   width: 74px;
+  min-width: 44px;
+  min-height: 44px;
 }
 /* add button hover & fix menu hover*/
 .app-bar .app-bar__navigation ul li:hover a {
